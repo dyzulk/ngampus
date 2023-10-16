@@ -1,127 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chick</title>
+    <title>Garuda Pancasila</title>
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/National_emblem_of_Indonesia_Garuda_Pancasila.svg/1024px-National_emblem_of_Indonesia_Garuda_Pancasila.svg.png"
+        type="image/png">
 
     <style>
-        h1{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        @font-face {
+            font-family: 'SF Pro Display';
+            src: url('font/SFPRODISPLAYBOLD.OTF');
+            font-family: 'SF Bold Italic';
+            src: url('font/SFPRODISPLAYBLACKITALIC.OTF');
+        }
+
+        @media screen and (min-width: 1001px) {
+            .frame {
+                width: 95%;
+            }
+        }
+
+        @media screen and (min-width: 400px) and (max-width: 1000px) {
+            .frame {
+                width: 80%;
+            }
+        }
+
+        h1 {
+            font-family: 'SF Bold Italic', sans-serif;
             text-align: center;
             font-size: 50px;
         }
 
-        h2{
+        h2 {
             background-color: bisque;
             color: rgb(185, 0, 0);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-family: 'SF Pro Display', sans-serif;
         }
 
-        img{
-            float: right;
-            width: auto;
-            height: 350px;
+        p {
+            font-family: 'SF Pro Display', sans-serif;
+            font-size: 16px;
         }
-        
-        b{
+
+        img {
+            float: right;
+            width: 240px;
+            height: auto;
+            margin: 0px 1.4rem;
+        }
+
+        b {
             color: rgb(230, 0, 0);
         }
 
-        .tabel01{
+        .tabel01 {
             background-color: rgb(255, 213, 213);
         }
 
+        .frame {
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid rgb(185, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+        }
     </style>
-    
+
 </head>
+
 <body>
-    <h1>Chick</h1>
-    <img src="./img/img1.jpg" alt="Gambar ceritanya" >
-    <h2>About</h2>
-    
+    <div class="frame">
+        <h1>Garuda Pancasila</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/National_emblem_of_Indonesia_Garuda_Pancasila.svg/1024px-National_emblem_of_Indonesia_Garuda_Pancasila.svg.png"
+            alt="Gambar ceritanya">
+        <h2>Who Am I</h2>
 
-    <p>Nyaawwww!</p>
-    <p>Hi, I'm Chick, I love <a href="https://youtu.be/9ougG5fvA1I?si=ix0cFVI1HjL8TNcA">User Interface (UI) and User Experience (UX)</a></p>
 
-    <h2>Courses</h2>
+        <p>Lambang negara Indonesia adalah <a href="https://id.wikipedia.org/wiki/Lambang_negara_Indonesia">Garuda
+                Pancasila</a> dengan semboyan Bhinneka Tunggal Ika. Lambang
+            negara Indonesia
+            berbentuk burung Garuda yang kepalanya menoleh ke sebelah kanan heraldik, perisai berbentuk menyerupai
+            jantung
+            yang digantung dengan rantai pada leher Garuda, dan semboyan Bhinneka Tunggal Ika yang berarti “Berbeda-beda
+            tetapi tetap satu” ditulis di atas pita yang dicengkeram oleh Garuda.</p>
 
-    <p>Here are some courses I've taken nyaw:</p>
-    <table border="1" style="border-collapse: collapse;">
-        <thead>
-            <th>Course Number</th>
-            <th>Course Title</th>
-            <th>Semester Taken</th>
-        </thead>
+        <h2>Desciption</h2>
 
-        <tbody>
-            <tr>
-                <th colspan="3">For Credit</th>
-            </tr>
+        <p>"Garuda bisa dibilang kan mitologi, tetapi Garuda itu adalah elang Jawa. Jadi, elang Jawa di dunia hanya ada
+            di Jawa.</p>
+        <table border="1" style="border-collapse: collapse;">
+            <thead>
+                <th>Course Number</th>
+                <th>Course Title</th>
+                <th>Semester Taken</th>
+            </thead>
 
-            <tr>
-                <td>6.813</td>
-                <td style="color: rgb(138, 150, 115);">User Interface Design</td>
-                <td style="color: rgb(138, 150, 115);">Spring 2014</td>
-            </tr>
-            <tr class="tabel01">
-                <td>6.034</td>
-                <td>Artificial Intelligence</td>
-                <td>Fall 2013</td>
-            </tr>
-            <tr>
-                <td>6.006</td>
-                <td>Introduction to Algorithms</td>
-                <td>Fall 2013</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <th colspan="3">For Credit</th>
+                </tr>
 
-            <tr>
-                <th colspan="3">Listener</th>
-            </tr>
+                <tr>
+                    <td>6.813</td>
+                    <td style="color: rgb(138, 150, 115);">User Interface Design</td>
+                    <td style="color: rgb(138, 150, 115);">Spring 2014</td>
+                </tr>
+                <tr class="tabel01">
+                    <td>6.034</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td>6.006</td>
+                    <td>Introduction to Algorithms</td>
+                    <td>Fall 2013</td>
+                </tr>
 
-            <tr>
-                <td>6.867</td>
-                <td>Machine Learning</td>
-                <td>Fall 2013</td>
-            </tr>
-            <tr class="tabel01">
-                <td>6.830</td>
-                <td>Database System</td>
-                <td>Fall 2012</td>
-            </tr>
-        </tbody>
-    </table>
+                <tr>
+                    <th colspan="3">Listener</th>
+                </tr>
 
-    <h2>Interests</h2>
+                <tr>
+                    <td>6.867</td>
+                    <td>Machine Learning</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr class="tabel01">
+                    <td>6.830</td>
+                    <td>Database System</td>
+                    <td>Fall 2012</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <p>I am Interested <B>Royal Canin</B>, <b>Whiskas</b>, and <b>Youtube Videos About Chick :3</b>.</p>
+        <h2>Interests</h2>
 
-    <h2>Submit Your Information</h2>
-    <p>If you want to have a relationship with a cute Chick like me, please enter it in the form below Nyaw!</p>
+        <p>Lorem ipsum dolor sit <b>amet consectetur</b> adipisicing elit. Fuga, illo.</p>
 
-    <table>
-        <form action="">
-            <tr>
-                <td><label for="">Name:</label></td>
-                <td><input type="text" required></td>
-            </tr>
-            <tr>
-                <td><label for="">Food brand:</label></td>
-                <td><input type="text" name="" id="" required></td>
-            </tr>
-            <tr>
-                <td rowspan="2"><p>Gender:</p></td>
-                <td colspan="3"><label for="male">Male</label><input type="radio" name="jk" id="male" value="Male" required></td>
-            </tr>
-            <tr>
-                <td colspan="3"><label for="female">Female</label><input type="radio" name="jk" id="female" value="female" required></td>
-            </tr>
-            <tr>
-                <td colspan="3"><button type="submit">Submit</button></td>
-            </tr>
-        </form>
-    </table>
-    
+        <h2>Contact Form</h2>
+        <p>If you have any questions or anything, contact us now</p>
+
+        <table>
+            <form action="">
+                <tr>
+                    <td><label for="">Name</label></td>
+                    <td class="td2">:</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email</label></td>
+                    <td class="td2">:</td>
+                    <td><input type="email" name="" id="" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <p>Gender</p>
+                    </td>
+                    <td class="td2">:</td>
+                    <td><label for="male">Male</label><input type="radio" name="jk" id="male" value="Male" required>
+                    </td>
+                    <td><label for="female">Female</label><input type="radio" name="jk" id="female" value="female"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td colspan="3"><button type="submit">Submit</button></td>
+                </tr>
+            </form>
+        </table>
+    </div>
 </body>
+
 </html>
