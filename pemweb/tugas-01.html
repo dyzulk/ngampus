@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Kompetisi Coding</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+            background-position: center;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .my {
+            margin-top: 3px;
+            margin-bottom: 0;
+        }
+
+        .container {
+            width: 50%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bungkus {
+            margin-right: 20px;
+        }
+
+        .form-title {
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: 500;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            outline: none;
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            color: white;
+        }
+
+        .input:focus {
+            border-color: #0e767e;
+            box-shadow: 0 0 10px rgba(9, 93, 114, 0.5);
+        }
+
+        .select-option {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: rgb(10, 52, 68);
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .select-option:checked {
+            background-color: #49545f;
+            color: white;
+        }
+
+
+        .submit {
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .button {
+            font-weight: 700;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0d8088;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            color: #094b50;
+            background-color: #a7f5ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h1 class="form-title">Formulir Pendaftaran Kompetisi Coding</h1>
+            <div class="bungkus">
+                <div class="form-group">
+                    <label for="nama">Nama Peserta</label>
+                    <input type="text" id="nama" name="nama" class="input my" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" class="input my" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" class="input my" pattern="[0-9]{13}" required>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat Rumah</label>
+                    <input type="text" id="alamat" name="alamat" class="input my" required>
+                </div>
+                <div class="form-group">
+                    <label for="pt">Perguruan Tinggi / Universitas</label>
+                    <input type="text" id="pt" name="pt" class="input my" required>
+                </div>
+                <div class="form-group">
+                    <label for="studi">Jurusan Studi</label>
+                    <input type="text" id="studi" name="studi" class="input my" required>
+                </div>
+                <div class="form-group">
+                    <label for="tgl-lahir">Tanggal Lahir</label>
+                    <input type="date" id="tgl-lahir" name="tgl-lahir" class="input my" required>
+                </div>
+                <div class="form-group">
+                    <label for="qoc">Pengalaman Koding Sebelumnya</label>
+                    <textarea name="qoc" id="qoc" class="input scrollable-textarea" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pilih">Pilih</label>
+                    <select id="pilih" name="pilih" class="input my" required>
+                        <option class="select-option" value="" disabled>Pilih...</option>
+                        <option class="select-option" value="Tim">Tim</option>
+                        <option class="select-option" value="Individu">Individu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nama-tim">Nama Tim</label>
+                    <textarea name="nama-tim" id="nama-tim" class="input scrollable-textarea" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit" class="button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
